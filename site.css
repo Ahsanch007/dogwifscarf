@@ -11,16 +11,76 @@ body {
     background-color: #ae1d17 !important ;
     color: #eee !important;
 }
+.zero-scroll {
+    display: inline-flex;
+    white-space: nowrap;
+}
 
 p {
     font-size: 1rem;
+}
+/* For Webkit-based browsers (such as Chrome, Safari) */
+.zero-scroll::-webkit-scrollbar {
+    width: 0; /* Adjust the width to your preference */
+}
+
+/* For Firefox */
+.zero-scroll::-moz-scrollbar {
+    width: 0; /* Adjust the width to your preference */
+}
+
+/* For Internet Explorer and Edge */
+/* Note: This is for Edge version 79 and below. Newer versions may not support this. */
+.zero-scroll::-ms-scrollbar {
+    width: 0; /* Adjust the width to your preference */
+}
+.zero-scroll{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-wrap: nowrap !important;
+}
+
+
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% - 1rem));
+    }
+}
+
+#scrollingRow {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.animated2 {
+    animation: scroll 20s linear infinite;
+}
+.img-container  a img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
 }
 
 a:hover {
     text-decoration: none;
     color: #bf1e2e;
 }
-
+@media(max-width:776px){
+    .centerrd{
+        text-align: center !important;
+    }
+    .img-container  a img{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    
+}
 .nav-link:hover {
     color: #28bcfd !important;
 }

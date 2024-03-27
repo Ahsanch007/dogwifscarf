@@ -671,11 +671,17 @@ svg#loader g:last-child circle {
 .line-height-3 {
     line-height: 1.5rem;
 }
+@media(max-width:776px){
+    .centerrd{
+        text-align: center !important;
+    }
+}
 
 @media (max-width:575.98px) {
     .ml-xs-0 {
         margin-left: 0 !important;
     }
+    
 
     .mr-xs-0 {
         margin-right: 0 !important;
