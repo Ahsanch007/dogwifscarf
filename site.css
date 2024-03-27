@@ -11,10 +11,7 @@ body {
     background-color: #ae1d17 !important ;
     color: #eee !important;
 }
-.zero-scroll {
-    display: inline-flex;
-    white-space: nowrap;
-}
+
 
 p {
     font-size: 1rem;
@@ -38,6 +35,8 @@ p {
     overflow-x: scroll;
     overflow-y: hidden;
     flex-wrap: nowrap !important;
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -48,7 +47,7 @@ p {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-100% - 1rem));
+        transform: translateX(calc(-100%));
     }
 }
 
@@ -58,7 +57,7 @@ p {
 }
 
 .animated2 {
-    animation: scroll 20s linear infinite;
+    animation: scroll 10s linear infinite;
 }
 .img-container  a img{
     width: 200px;
@@ -75,11 +74,16 @@ a:hover {
         text-align: center !important;
     }
     .img-container  a img{
-        width: 100%;
+        width: 160px;
         height: auto;
-        object-fit: contain;
+        object-fit: cover;
     }
-    
+    .zero-scroll {
+        display: inline-flex;
+        white-space: nowrap;
+        align-items: center;
+        gap: 30px;
+    }
 }
 .nav-link:hover {
     color: #28bcfd !important;
