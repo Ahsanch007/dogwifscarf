@@ -23,10 +23,13 @@
     <!-- M was here! -->
     <link rel="stylesheet" type="text/css" href="./theme-assets/css/flaticon.css">
     <link rel="stylesheet" type="text/css" href="site.css">
-    <!-- Link to Swiper CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
-
+    <!-- Include jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 </head>
 
 <body class=" 1-column undefined  page-animated svg-wrapper" data-menu-open="hover" data-menu="">
@@ -591,35 +594,35 @@
                     </div>
                 </section>
                 <section class="compainies  " id="conmpanies">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <!-- Your existing code goes here -->
-                            <div class="swiper-slide img-container">
+                    <div class="container ">
+                        <div class="  zero-scroll animated animated2" id="scrollingRow">
+                            <div class="img-container">
                                 <a href="https://jup.ag/swap/SOL-WIFS_6vUQsePjhpH67Db6p7Koj1wQsQP1UtovBkWXSrC1DkaA">
                                     <img src="./theme-assets/images/IMG_8982.PNG" alt="">
                                 </a>
                             </div>
-                            <div class="swiper-slide img-container">
+                            <div class="img-container">
                                 <a href="https://www.coingecko.com/en/coins/dogwifscarf">
                                     <img src="./theme-assets/images/cg 2.PNG" alt="">
                                 </a>
                             </div>
-                            <div class="swiper-slide img-container">
+                            <div class="img-container">
                                 <a href="https://coinmarketcap.com/currencies/dogwifscarf/">
                                     <img src="./theme-assets/images/IMG_8980.PNG" alt="">
                                 </a>
                             </div>
-                            <div class="swiper-slide img-container">
+                            <div class="img-container">
                                 <a
                                     href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=6vUQsePjhpH67Db6p7Koj1wQsQP1UtovBkWXSrC1DkaA&fixed=in">
                                     <img src="./theme-assets/images/IMG_8976.PNG" alt="">
                                 </a>
                             </div>
-                            <div class="swiper-slide img-container">
+                            <div class="img-container">
                                 <a href="#">
                                     <img src="./theme-assets/images/images-removebg-preview.png" alt="">
                                 </a>
                             </div>
+
                         </div>
                     </div>
                 </section>
@@ -810,18 +813,29 @@
 
 
     </script> -->
-    <!-- Link to Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Slick Slider JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Your custom JS -->
     <script>
-        // Initialize Swiper
-        var swiper = new Swiper('.swiper-container', {
-            direction: 'horizontal',
-            loop: true,
-            autoplay: {
-                delay: 2000, // Adjust autoplay speed as needed
-            },
-            slidesPerView: 'auto', // Show as many slides as possible without space
-            spaceBetween: 20, // Adjust space between slides as needed
+        // Use jQuery in no-conflict mode
+        jQuery(document).ready(function ($) {
+            // Initialize Slick Slider
+            $('#scrollingRow').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                responsive: [
+                    {
+                        breakpoint: 768, // Breakpoint for mobile devices
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
         });
     </script>
     <script src="theme-assets/vendors/vendors.min.js"></script>
