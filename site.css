@@ -4188,11 +4188,12 @@ blockquote {
     .blog-area .blog-container .sidebar .card.square {
         margin-bottom: 5rem;
     }
-    .footer{
-        margin-top: 0px;
-    }
+   
     .heading .title{
         padding-top: 0px;
+    }
+    #scrollingRow{
+        padding: 2rem 0px;
     }
 }
 
@@ -4203,6 +4204,12 @@ blockquote {
 
     .blog-area .blog-container .sidebar .social-card .card-body ul.social-buttons li a {
         margin-right: 0;
+    }
+    .mbl-gap-btn{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 19px;
     }
 }
 
