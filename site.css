@@ -58,23 +58,7 @@ p {
 }
 
 
-/* @keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(calc(-50%));
-    }
-}
-
-#scrollingRow {
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-.animated2 {
-    animation: scroll 10s linear infinite;
-} */
+ 
 .img-container{
     text-align: center !important;
 }
@@ -3012,8 +2996,8 @@ header .navbar.navbar-shadow {
 }
 
 .section-padding {
-    padding-top: 5.5rem;
-    padding-bottom: 5.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .dark-bg-heading {
@@ -3816,6 +3800,7 @@ header .navbar.navbar-shadow {
     padding-bottom: 2.5rem;
     position: relative;
     background-color: #000;
+    margin-top: 2rem;
 }
 
 .footer.footer-dark {
