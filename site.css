@@ -4188,6 +4188,12 @@ blockquote {
     .blog-area .blog-container .sidebar .card.square {
         margin-bottom: 5rem;
     }
+    .footer{
+        margin-top: 0px;
+    }
+    .heading .title{
+        padding-top: 0px;
+    }
 }
 
 @media (max-width:767.98px) {
