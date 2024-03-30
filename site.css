@@ -4211,6 +4211,10 @@ blockquote {
         justify-content: center;
         gap: 19px;
     }
+    .mbl-btn{
+        justify-content: center;
+        margin-bottom: 20px;
+    }
 }
 
 .sidebar {
